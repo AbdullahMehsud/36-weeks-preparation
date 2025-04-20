@@ -1,0 +1,14 @@
+--------bash basic commands---------------
+pwd -> showing current directory
+cd -> used to move b/w folders
+eg: cd Desktop, cd ../ -> got back, cd / -> go to root
+ls -> list content the current folder
+ls -l -> detail view, ls -a -> show hidden files
+mkdir -> create new folder eg: mkdir myFolder, mkdir projects/2025/april -> creates nested folder
+touch -> create new empty file eg: touch file.txt
+cat -> view file content in the terminal eg: cat file.txt
+vi -> launches editor to edit file in the terminal
+mv -> move or rename file eg: file.txt newFolder/, mv oldname.txt newName.txt 
+cp -> copy file eg: cp index.js copyIndex.js
+cp -r myFolder backupFolder 
+

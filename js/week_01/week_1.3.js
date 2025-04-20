@@ -28,12 +28,14 @@
 
  // for...in used with objects
 
- /*const cars = {brand: "toyota", model: "corola", year: 2025}
-
+ 
+ /*
+ const cars = {brand: "toyota", model: "corola", year: 2025}
+ 
  for( const car in cars){
     console.log(`${car}: ${cars[car]}`);
-    
- }*/
+ }
+ */
 
 
 // 02. Function
