@@ -1,0 +1,8 @@
+nodeJs vs expressJs? -> node is a runtime environment that allows you to run javascript outside the browser
+what is expressJs? -> express is the web application framwork built on top of nodeJs make building web servers easier eg: routing
+why express js? -> http is deficult express make thing easier to use
+routing? -> /profile, /product/:productId
+middleware
+request and response
+route parameters
+template engines
