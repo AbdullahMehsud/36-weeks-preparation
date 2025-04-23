@@ -1,0 +1,16 @@
+node js runtime
+what is node js?
+node js is a javascript runtime built in chrome's V8 engine
+it allows you to run javaScript outside the browser typically on a server
+ideal for building fast, scalable and real-time network applications
+use non blocking I/O and event driven architecture
+
+
+express basics
+what is express?
+express is a web framework for node js
+it simplifies the process of handling the routes, requests and middleware
+helps to build rest apis easily
+makes routing, handling post/get request, and middleware handling super smooth
+large community and middleware support for authentication, validation e`tc
+
