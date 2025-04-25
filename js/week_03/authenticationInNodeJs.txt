@@ -1,0 +1,17 @@
+authentication patterens:
+statefull-> which maintains state or data or server side
+-> server keeps track of the users session
+-> after the user logs in, the server creates a session(usually stored in memory or a database)
+-> a session ID is sent back to the client, typically in cookie
+-> for each request, the server checks the session ID to validate the user
+
+
+stateless-> which has no state
+-> the server dose not store any session data 
+-> after login, the server sends back a token (usually a jwt)
+-> on each request the client sends the token(typically in the authorization header)
+-> the server verifies the token on every request
+
+cookie -> auto
+-> only valid for browser
+
