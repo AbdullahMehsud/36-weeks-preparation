@@ -18,8 +18,10 @@ app.use(cookieParser())
 
 import healthcheckRouter from './routes/healthcheck.routes.js'
 import userRouter from './routes/user.routes.js'
+import blogRouter from './routes/post.routes.js'
 
-app.use('/v1/api/healthCheck', healthcheckRouter)
-app.use('/v1/api/user', userRouter)
+app.use('/api/v1/healthCheck', healthcheckRouter)
+app.use('/api/v1/user', userRouter)
+app.use('/api/v1/blog', blogRouter)
 
 export default app

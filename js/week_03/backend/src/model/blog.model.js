@@ -1,12 +1,12 @@
 import mongoose, {Schema} from "mongoose"
 
 const blogSchema = new Schema({
-    tile: {
-        string: true,
+    title: {
+        type: String,
         required: true
     },
     content: {
-        string: true,
+        type: String,
         required: true,
     },
     authoer: {
