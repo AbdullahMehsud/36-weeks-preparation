@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      .div-container {
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        height: 500px;
+      }
+      #first-input {
+        height: 30px;
+      }
+      #cal-button {
+        height: 30px;
+      }
+      .inner-div-2 {
+        height: 200px;
+        width: 300px;
+        border: 2px black solid;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div-container">
+      <div class="div-container-2">
+        <div class="inner-div">
+          <h1>Calculator</h1>
+          <input type="text" id="first-input" />
+          <button onclick="cal()" id="cal-button">Calculate</button>
+        </div>
+        <div class="inner-div-2">
+          <button onclick="plus()">Plus</button>
+          <button onclick="minus()">Minus</button>
+          <button onclick="multiply()">Multiply</button>
+          <button onclick="divide()">divide</button>
+          <button onclick="clearInput()">Clear</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function plus() {
+      const input = document.getElementById("first-input");
+      input.value += " + ";
+    }
+    function minus() {
+      const input = document.getElementById("first-input");
+      input.value += " - ";
+    }
+    function multiply() {
+      const input = document.getElementById("first-input");
+      input.value += " * ";
+    }
+    function divide() {
+      const input = document.getElementById("first-input");
+      input.value += " / ";
+    }
+    function clearInput() {
+      document.getElementById("first-input").value = "";
+    }
+
+    function cal() {
+      const input = document.getElementById("first-input");
+      input.value = eval(input.value);
+    }
+  </script>
+</html>
