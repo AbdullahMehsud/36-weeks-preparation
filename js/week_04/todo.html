@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+    <style>
+        .first-div{
+            height: 200px;
+            display: flex;
+            justify-content: center; 
+            background-color: aliceblue;
+        }
+
+        .inner-div{
+            background-color: bisque;
+            width: 800px;
+            justify-items: center;
+        }
+
+        .first-input {
+            width: 300px;
+            height: 20px;
+            border: none;
+        }
+        .first-button{
+            height: 20px;
+            background-color: rgb(211, 187, 7);
+            border: none;
+            cursor: pointer;
+        }
+
+        .first-button:hover{
+            background-color: rgb(170, 150, 5);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="first-div">
+        <div class="inner-div">
+            <h1> Make a todo list</h1>
+            <div>
+                <input id="input-value" class="first-input" type="text">
+                <button onclick="addTodo()" class="first-button">Add</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script>
+    function addTodo (){
+        const value = document.getElementById('input-value').value
+        const div = document.querySelector('.inner-div')
+
+
+        const todoContainer = document.createElement('div')
+        todoContainer.className = 'div-2'
+
+        const create = document.createElement('p')
+        create.style.backgroundColor = 'yellow'
+        create.textContent = value
+
+        const removeButton = document.createElement('button')
+        removeButton.textContent = "Remove"
+        removeButton.className = 'remove'
+        
+
+        removeButton.onclick = () => {
+            todoContainer.remove()
+        }
+
+        todoContainer.appendChild(create)
+        todoContainer.appendChild(removeButton)
+
+        div.appendChild(todoContainer)
+
+        document.getElementById('input-value').value = ''
+    }
+
+
+</script>
+</html>

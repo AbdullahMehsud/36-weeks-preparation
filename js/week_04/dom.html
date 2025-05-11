@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .h1 {
+            color: white;
+            background-color: #000;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- <input id="input" type="text">
+    <h1 id="h1">What is DOM</h1>
+    <button onclick="changeHeadingText()">Change heading</button> -->
+    <div id="main-div">
+        <div></div>
+        <span></span>
+        <p></p>
+    </div>
+    <h1 class="h1">Add two Numbers</h1>
+
+    <label for="input1">First Number</label>
+    <input id="input1" type="text">
+
+    <label for="input1">second Number</label>
+    <input id="input2" type="text">
+    <p class="result">Result:  </p>
+    <button onclick="addTwoNO()">Calculate</button>
+    <button onclick="removeElement()">Remove</button>
+    <!-- <h2 id="h2">this</h2> -->
+</body>
+<script>
+    function addTwoNO() {
+        const firstValue = document.getElementById('input1').value /// value to get input value
+        const secondValue = document.getElementById('input2').value /// value to get input value
+        
+        const sum = Number(firstValue) + Number(secondValue);
+        console.log(sum);
+
+        const resultPara = document.querySelector('.result')
+        resultPara.textContent = 'Result: ' + sum
+
+        // const newDiv = document.getElementsByClassName('main-div');
+        // const cont = document.createElement('p')
+        // document.body.appendChild(cont)
+        // cont.style.position = 'absolute'
+        // cont.style.top = '122px'
+        // cont.style.left = '73px'
+        // cont.style.color = 'red'
+        // cont.innerHTML = sum
+
+        // createElement
+        const newDiv = document.createElement('div');
+        const content = document.createTextNode("This text added to div by create text node");
+        newDiv.appendChild(content)
+        document.body.insertBefore(newDiv, resultPara) 
+        
+        // Query Selector, getElementById, querySelectorAll
+
+        // const getText = document.getElementById('h2').innerText
+        // console.log(getText);
+
+        // const paras  = document.getElementsByTagName("input")
+        // console.log(paras);
+        
+        // const firstEl = document.querySelector('input') // first element
+        // console.dir(firstEl)
+        // const allEl = document.querySelectorAll('input') // all element
+        // console.dir(allEl)
+
+        // const div01 = document.getElementById('main-div')
+        // console.log(div01.firstChild.nodeName);
+        newDiv.style.color = 'red'
+        newDiv.style.backgroundColor = 'yellow'
+        setTimeout(() => {
+            newDiv.remove()
+        }, 2000)
+    }
+
+    // function removeElement (){
+    //     const element = document.querySelector('div')
+    //     console.log(element);
+    //     element.remove()
+         
+    // }
+    
+        
+
+</script>
+</html>
