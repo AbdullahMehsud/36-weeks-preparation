@@ -5,6 +5,7 @@ import Counter from "./components/Counter";
 import Parent from "./components/Parent";
 import ReducerCount from "./components/ReducerCount";
 import State from "./components/State";
+import UseMemoHook from "./components/useMemoHook";
 import UseRefHook from "./components/UseRefHook";
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
     {/* <CleanUp/> */}
     {/* <Parent /> */}
     {/* <ReducerCount/> */}
-    {<UseRefHook/>}
+    {/* {<UseRefHook/>} */}
+    <UseMemoHook/>
       </div>
   );
 }
