@@ -15,6 +15,10 @@ function UseMemoHook() {
     const CheckData = useMemo(() => {
         return countNumber(myNum)
     }, [myNum])
+    
+    
+    // use memo hook -->  return a memoized value
+    // use callback hook --> return a memoized function 
   return (
     <div className='border border-white w-96  bg-[#333446] text-white flex justify-center rounded'>
         <div className='flex flex-col gap-2 py-2 items-center'>
