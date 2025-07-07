@@ -3,7 +3,7 @@ import product2 from '../assets/product-2.png'
 import product3 from '../assets/product-3.png'
 function Product() {
   return (
-    <div className="py-20 px-28 ">
+    <div className="py-10 px-28 ">
         <div className='grid grid-cols-4 justify-between'>
             <div className='px-2'>
                     <h1 className='font-medium text-2xl '>Crafted with excellent material.</h1>

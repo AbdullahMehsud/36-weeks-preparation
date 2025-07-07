@@ -1,5 +1,8 @@
 import './App.css'
+import Footer from './components/footer/Footer'
 import Header from './components/Header/Header'
+import About from './components/pages/About'
+import Home from './components/pages/Home'
 import Product from './components/Product'
 
 function App() {
@@ -11,8 +14,9 @@ function App() {
           <Header/>
           <main>
           <Product/>
+          <Home/>
           </main>
-          {/* footer */}
+          <Footer/>
         </div>
       </div>
     </>
