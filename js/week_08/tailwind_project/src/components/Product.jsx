@@ -3,11 +3,11 @@ import product2 from '../assets/product-2.png'
 import product3 from '../assets/product-3.png'
 function Product() {
   return (
-    <div className="py-10 px-20 ">
-        <div className='grid grid-cols-4 justify-between'>
+    <div className="md:py-10 py-20 md:px-20 ">
+        <div className='md:grid md:grid-cols-4 flex flex-col justify-between'>
             <div className='px-2'>
                     <h1 className='font-medium text-2xl '>Crafted with excellent material.</h1>
-                    <p className='mt-4 text-[#6c757d] text-sm'>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+                    <p className='md:mt-4 mt-6 text-[#6c757d] text-sm'>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
                     <div className='flex gap-2 mt-4'>
                         
                         <button className='bg-[#212121] hover:bg-black border border-white text-white rounded-4xl px-5 py-2 cursor-pointer '>Explore</button>

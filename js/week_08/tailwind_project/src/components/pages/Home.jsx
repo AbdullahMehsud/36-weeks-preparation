@@ -57,8 +57,8 @@ function Home() {
   return (
     <>
     <Product/>
-      <div className="mt-24 px-28">
-        <div className="grid grid-cols-2 justify-between">
+      <div className="mt-24 md:px-28">
+        <div className="md:grid md:grid-cols-2 flex flex-col justify-between">
           <div className="px-2">
             <h1 className="font-normal text-3xl">Why choose use</h1>
             <p className="mt-4 text-[#6c757d] text-sm">
@@ -117,12 +117,12 @@ function Home() {
           </div>
           <div className="relative">
             <img
-              className="absolute left-6 -top-8 h-48 w-52"
+              className="absolute md:left-6 -left-24 md:-top-6 -top-0 md:h-48 md:w-52"
               src={dotsYellow}
               alt=""
             />
             <img
-              className="absolute left-28 -bottom-36 rounded-2xl w-md"
+              className="absolute md:left-28 md:-bottom-36 top-20 md:top-auto md:px-0 px-4 rounded-4xl md:rounded-2xl md:w-md"
               src={whyChooseUs}
               alt=""
             />
@@ -130,34 +130,34 @@ function Home() {
         </div>
       </div>
       <div className="mt-96 px-6 h-auto">
-        <div className="grid grid-cols-2 justify-between">
+        <div className="md:grid md:grid-cols-2 flex flex-col justify-between">
           <div className="relative">
             <img
-              className="absolute left-3 -top-20 h-48 w-52"
+              className="absolute md:left-3 -left-28 md:-top-20 top-56 md:h-48 md:w-52"
               src={dotsGreen}
               alt=""
             />
             <img
-              className="absolute left-24  rounded-2xl w-96"
+              className="absolute -left-2 md:left-24 md:top-auto top-72 rounded-2xl w-60 md:w-96"
               src={image1}
               alt=""
             />
             <img
-              className="absolute -right-20 top-0 rounded-2xl w-48"
+              className="absolute md:-right-20 right-4 md:top-0 top-60 rounded-2xl w-24 md:w-48"
               src={image2}
               alt=""
             />
             <img
-              className="absolute -right-20 top-52 rounded-2xl w-80 "
+              className="absolute md:-right-20 right-0 md:top-52 top-96 rounded-2xl w-48 md:w-80 "
               src={image3}
               alt=""
             />
           </div>
-          <div className="pl-30">
-            <h1 className="font-medium text-3xl pr-10">
+          <div className="md:pl-30 md:mt-0 mt-[650px]">
+            <h1 className="font-medium text-2xl md:text-3xl md:pr-10">
               We Help You Make Modern Interior Design
             </h1>
-            <p className="mt-4 text-[#6c757d] text-xs pr-16 leading-5">
+            <p className="mt-4 text-[#6c757d] text-xs md:pr-16 leading-5">
               Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio
               quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
               vulputate velit imperdiet dolor tempor tristique. Pellentesque
@@ -187,8 +187,8 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="mt-96 flex justify-center">
-        <div className="grid grid-cols-3 px-20 gap-2">
+      <div className="md:mt-96 mt-40 flex justify-center">
+        <div className="md:grid md:grid-cols-3 flex flex-col md:px-20 md:gap-2 gap-10 px-8">
           {products.map((product, index) => (
             <div className="flex gap-4 relative" key={index}>
               <div className=" rounded-3xl bg-[#DCE5E4] w-40 h-24 flex items-center justify-center"></div>
@@ -211,14 +211,14 @@ function Home() {
         </div>
       </div>
       <Testimonials />
-      <div className="w-full pb-40 px-20">
-        <div className="flex justify-between">
+      <div className="w-full pb-40 md:px-20 px-4">
+        <div className="flex flex-col md:flex-row md:flex md:justify-between">
           <h2 className="font-semibold text-3xl">Recent Blog</h2>
           <p className="text-sm font-medium underline hover:cursor-pointer">
             View All Posts
           </p>
         </div>
-        <div className="flex gap-6 mt-14">
+        <div className="flex flex-col md:flex-row md:flex gap-6 mt-14">
           {blogs.map((blog, index) => (
             <div key={index}>
               <img src={blog.image} alt="" className="w-96 rounded-3xl hover:opacity-70 cursor-pointer duration-500" />

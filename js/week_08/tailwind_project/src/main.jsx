@@ -8,6 +8,7 @@ import About from "./components/pages/About.jsx";
 import Services from "./components/pages/Services.jsx";
 import Blog from "./components/pages/Blog.jsx";
 import Contact from "./components/pages/Contact.jsx";
+import Shop from "./components/pages/Shop.jsx";
 
 const router = createBrowserRouter(
   [
@@ -34,6 +35,10 @@ const router = createBrowserRouter(
         {
           path: '/contect-us',
           element: <Contact/>
+        },
+        {
+          path: '/shop',
+          element: <Shop/>
         },
       ]
     }]);

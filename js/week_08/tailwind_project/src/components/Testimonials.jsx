@@ -71,7 +71,7 @@ function Testimonials() {
             {testimonials.map((testimonial, index) => (
               <SwiperSlide key={testimonial.id}>
                 <div className="w-full">
-                  <blockquote className="text-center py-8 text-gray-600 px-48">
+                  <blockquote className="text-center py-8 text-gray-600 md:px-48">
                     "{testimonial.quote}"
                   </blockquote>
                   <div className="flex flex-col items-center">
