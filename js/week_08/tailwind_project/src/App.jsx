@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router'
 import './App.css'
 import Footer from './components/footer/Footer'
 import Header from './components/Header/Header'
@@ -13,8 +14,7 @@ function App() {
         <div className='w-full block'>
           <Header/>
           <main>
-          <Product/>
-          <Home/>
+          <Outlet/>
           </main>
           <Footer/>
         </div>

@@ -5,7 +5,7 @@ import sofa from "../../assets/sofa.png";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 function Footer() {
   return (
-    <div className="w-full bg-white py-20 mt-96 relative">
+    <div className="w-full bg-white py-20 relative">
       <div className="flex px-20">
         <form action="">
           <h1 className=" flex items-center gap-2 text-green-950 text-xl">

@@ -9,9 +9,54 @@ import image1 from "../../assets/img-grid-1.jpg";
 import image2 from "../../assets/img-grid-2.jpg";
 import image3 from "../../assets/img-grid-3.jpg";
 import product1 from "../../assets/product-1.png";
+import product2 from "../../assets/product-2.png";
+import product3 from "../../assets/product-3.png";
+import Testimonials from "../Testimonials";
+import post1 from "../../assets/post-1.jpg";
+import post2 from "../../assets/post-2.jpg";
+import post3 from "../../assets/post-3.jpg";
+import Product from "../Product";
 function Home() {
+  const products = [
+    {
+      image: product1,
+      title: "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
+      url: "Read More",
+    },
+    {
+      image: product2,
+      title: "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
+      url: "Read More",
+    },
+    {
+      image: product3,
+      title: "Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio",
+      url: "Read More",
+    },
+  ];
+  const blogs = [
+    {
+      image: post1,
+      title: "First Time Home Owner Ideas",
+      author: "Kristin Watson",
+      date: "Dec 19, 2021",
+    },
+    {
+      image: post2,
+      title: "How To Keep Your Furniture Clean",
+      author: "Robert Fox on",
+      date: "Dec 15, 2021", 
+    },
+    {
+      image: post3,
+      title: "Small Space Furniture Apartment Ideas",
+      author: "Kristin Watson on",
+      date: "Dec 12, 2021",
+    },
+  ];
   return (
     <>
+    <Product/>
       <div className="mt-24 px-28">
         <div className="grid grid-cols-2 justify-between">
           <div className="px-2">
@@ -142,53 +187,51 @@ function Home() {
           </div>
         </div>
       </div>
-     <div className="mt-96 flex justify-center">
-  <div className="grid grid-cols-3 px-20 gap-2">
-    <div className="flex gap-4">
-      <div className="rounded-3xl bg-[#DCE5E4] w-24 h-24 flex items-center justify-center overflow-hidden">
-        <img src={product1} alt="" className="w-20 h-auto object-contain" />
+      <div className="mt-96 flex justify-center">
+        <div className="grid grid-cols-3 px-20 gap-2">
+          {products.map((product, index) => (
+            <div className="flex gap-4 relative" key={index}>
+              <div className=" rounded-3xl bg-[#DCE5E4] w-40 h-24 flex items-center justify-center"></div>
+              <div className="absolute -left-3 -top-2">
+                <img
+                  src={product?.image}
+                  alt=""
+                  className="w-32 h-28 object-contain"
+                />
+              </div>
+              <div className="max-w-xs">
+                <h3 className="text-lg font-semibold">Nordic Chair</h3>
+                <p className="text-sm text-gray-600">{product.title}</p>
+                <p className="text-sm text-gray-500 hover:text-gray-400 font-medium mt-1 cursor-pointer">
+                  {product.url}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="max-w-xs">
-        <h3 className="text-lg font-semibold">Nordic Chair</h3>
-        <p className="text-sm text-gray-600">
-          Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio
-        </p>
-        <p className="text-sm text-green-800 font-medium mt-1 cursor-pointer hover:underline">
-          Read More
-        </p>
+      <Testimonials />
+      <div className="w-full pb-40 px-20">
+        <div className="flex justify-between">
+          <h2 className="font-semibold text-3xl">Recent Blog</h2>
+          <p className="text-sm font-medium underline hover:cursor-pointer">
+            View All Posts
+          </p>
+        </div>
+        <div className="flex gap-6 mt-14">
+          {blogs.map((blog, index) => (
+            <div key={index}>
+              <img src={blog.image} alt="" className="w-96 rounded-3xl hover:opacity-70 cursor-pointer duration-500" />
+              <h2 className="text-lg mt-3 px-2 font-medium">{blog.title}</h2>
+              <h2 className="text-md px-2 font-medium">
+                <span className="text-gray-500">by </span>
+                {blog.author} <span className="text-gray-500">on</span>{" "}
+                {blog.date}
+              </h2>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
-    <div className="flex gap-4">
-      <div className="rounded-3xl bg-[#DCE5E4] w-24 h-24 flex items-center justify-center overflow-hidden">
-        <img src={product1} alt="" className="w-20 h-auto object-contain" />
-      </div>
-      <div className="max-w-xs">
-        <h3 className="text-lg font-semibold">Nordic Chair</h3>
-        <p className="text-sm text-gray-600">
-          Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio
-        </p>
-        <p className="text-sm text-green-800 font-medium mt-1 cursor-pointer hover:underline">
-          Read More
-        </p>
-      </div>
-    </div>
-    <div className="flex gap-4">
-      <div className="rounded-3xl bg-[#DCE5E4] w-24 h-24 flex items-center justify-center overflow-hidden">
-        <img src={product1} alt="" className="w-20 h-auto object-contain" />
-      </div>
-      <div className="max-w-xs">
-        <h3 className="text-lg font-semibold">Nordic Chair</h3>
-        <p className="text-sm text-gray-600">
-          Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio
-        </p>
-        <p className="text-sm text-green-800 font-medium mt-1 cursor-pointer hover:underline">
-          Read More
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
     </>
   );
 }
