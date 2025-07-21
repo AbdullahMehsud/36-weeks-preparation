@@ -4,7 +4,7 @@ import product3 from '../../assets/product-3.png'
 function Shop() {
   return (
     <div className="w-full">
-      <div className="grid grid-cols-4 py-28 px-20 space-y-14">
+      <div className="md:grid md:grid-cols-4 flex flex-col md:mb-0 mb-30 py-28 px-20 space-y-14">
         <div className="flex flex-col justify-center items-center w-72">
           <img src={product3} alt="" />
           <h3 className="font-semibold mt-5">Nordic Chair</h3>

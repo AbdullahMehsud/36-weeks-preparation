@@ -12,8 +12,8 @@ import Testimonials from '../Testimonials'
 function About() {
   return (
     <>
-    <div className="mt-24 px-28">
-      <div className="grid grid-cols-2 justify-between">
+    <div className="mt-24 md:px-28 px-2">
+      <div className="md:grid md:grid-cols-2 flex flex-col justify-between">
         <div className="px-2">
           <h1 className="font-normal text-3xl">Why choose use</h1>
           <p className="mt-4 text-[#6c757d] text-sm">
@@ -71,43 +71,43 @@ function About() {
           </div>
         </div>
         <div className="relative">
-          <img className="absolute left-6 -top-8 h-48 w-52" src={dotsYellow} alt="" />
+          <img className="absolute md:left-6 -left-20 md:-top-8 h-48 w-52" src={dotsYellow} alt="" />
           <img
-            className="absolute left-28 -bottom-36 rounded-2xl w-md"
+            className="absolute md:left-28 md:top-auto top-20 md:-bottom-36 rounded-2xl w-md"
             src={whyChooseUs}
             alt=""
           />
         </div>
       </div>
     </div>
-    <div className="mt-96 px-16">
+    <div className="mt-96 px-2 md:px-16">
         <div className="flex justify-center">
-          <h1 className="text-4xl">Our Team</h1>
+          <h1 className="text-4xl md:mt-0 mt-80">Our Team</h1>
         </div>
-        <div className="flex pt-14">
+        <div className="md:flex md:flex-row flex flex-col pt-14 md:gap-0 gap-10">
           <div>
-            <img src={person1} alt="person1" className="w-64" />
+            <img src={person1} alt="person1" className="md:w-64 w-full" />
             <h2 className="text-3xl underline font-normal pt-8">Lawson Arnold</h2>
             <p className="text-gray-600 pt-2">CEO, Founder, Atty.</p>
             <p className="pt-5 text-gray-600">Separated they live in. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
             <p className="pt-5 font-semibold underline">Learn More</p>
           </div>
           <div>
-            <img src={person2} alt="person1" className="w-64" />
+            <img src={person2} alt="person1" className="md:w-64 w-full" />
             <h2 className="text-3xl underline font-normal pt-8">Jeremy Walker</h2>
             <p className="text-gray-600 pt-2">CEO, Founder, Atty.</p>
             <p className="pt-5 text-gray-600">Separated they live in. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
             <p className="pt-5 font-semibold underline">Learn More</p>
           </div>
           <div>
-            <img src={person3} alt="person1" className="w-64" />
+            <img src={person3} alt="person1" className="md:w-64 w-full" />
             <h2 className="text-3xl underline font-normal pt-8">Patrik White</h2>
             <p className="text-gray-600 pt-2">CEO, Founder, Atty.</p>
             <p className="pt-5 text-gray-600">Separated they live in. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
             <p className="pt-5 font-semibold underline">Learn More</p>
           </div>
           <div>
-            <img src={person4} alt="person1" className="w-64" />
+            <img src={person4} alt="person1" className="md:w-64 w-full" />
             <h2 className="text-3xl underline font-normal pt-8">Kathryn Ryan</h2>
             <p className="text-gray-600 pt-2">CEO, Founder, Atty.</p>
             <p className="pt-5 text-gray-600">Separated they live in. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
