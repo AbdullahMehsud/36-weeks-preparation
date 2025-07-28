@@ -107,16 +107,24 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="md:px-20 px-2 md:flex gap-2 md:mt-0 mt-10 hidden">
-        {[Facebook, Twitter, Instagram, Linkedin].map((Icon, i) => (
-            <div
-              key={i}
-              className="text-[#314D43] cursor-pointer hover:text-white hover:bg-[#314d43] bg-[#c6dad2] rounded-full w-10 h-10 flex justify-center items-center"
-            >
-              <Icon size={16} />
-            </div>
-          ))}
-      </div>
+     <div className="md:px-20 px-2 md:flex gap-2 md:mt-0 mt-10 hidden">
+  {[
+    { logo: Facebook, url: "https://facebook.com" },
+    { logo: Twitter, url: "https://twitter.com" },
+    { logo: Instagram, url: "https://www.instagram.com/" },
+    { logo: Linkedin, url: "https://www.linkedin.com/in/abdullahmehsud/" },
+  ].map(({ logo: Icon, url }, i) => (
+    <a
+      href={url}
+      key={i}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-[#314D43] cursor-pointer hover:text-white hover:bg-[#314d43] bg-[#c6dad2] rounded-full w-10 h-10 flex justify-center items-center"
+    >
+      <Icon size={16} />
+    </a>
+  ))}
+</div>
       <div className="md:px-20 px-2 py-10 space-y-8">
         <div className="border border-gray-200"></div>
         <div className="md:flex  flex flex-col md:flex-row justify-center gap-2 text-gray-600">

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Container from "../container/Container";
 import couch from "../../assets/couch.png";
+import couch2 from "../../assets/couch2.png";
 import dotsLight from "../../assets/dots-light.svg";
+import dotsLight2 from "../../assets/dots-light2.svg";
 import cart from "../../assets/cart.svg";
 import user from "../../assets/user.svg";
 import { Link, useLocation, useNavigate } from "react-router";
@@ -177,7 +179,7 @@ function Header() {
           ) : (
             <div className="flex flex-col md:grid md:grid-cols-2">
               <div className="md:px-28 px-5 md:py-20 ">
-                <h1 className="mb-5 md:leading-14 font-bold md:text-5xl text-3xl text-white font-sans md:mt-0 mt-2">
+                <h1 className="mb-5 xl:leading-14 font-bold md:text-4xl xl:text-5xl text-3xl text-white font-sans md:mt-0 mt-2">
                   {(() => {
                     const currentPage = pageName.find(
                       (page) => page.slug === location.pathname
@@ -191,7 +193,7 @@ function Header() {
                     );
                   })()}
                 </h1>
-                <span className=" text-neutral-300 text-sm  md:text-xs">
+                <span className="text-neutral-300 text-sm  md:text-xs">
                   Donec vitae odio quis nisl dapibus malesuada. Nullam ac
                   aliquet velit. Aliquam vulputate velit imperdiet dolor tempor
                   tristique.
@@ -208,17 +210,27 @@ function Header() {
                   </button>
                 </div>
               </div>
-              <div className="md:relative py-8">
+              <div className="relative py-8">
                 <img
                   className="md:right-10 md:left-auto left-60 md:mt-5 absolute md:h-48 md:w-52"
                   src={dotsLight}
                   alt=""
                 />
+                {/* <img
+                  className="block md:hidden md:right-10 md:left-auto left-60 md:mt-5 absolute md:h-48 md:w-52"
+                  src={dotsLight2}
+                  alt=""
+                /> */}
                 <img
-                  className="absolute md:right-20 md:left-auto left-0 md:mb-10 max-w-3xl h-[600px] md:h-auto md:w-full"
+                  className=" absolute md:right-20 md:left-auto left-0 md:mb-10 max-w-3xl h-[600px] md:h-auto md:w-full"
                   src={couch}
                   alt=""
                 />
+                {/* <img
+                  className="block md:hidden absolute md:right-20 md:left-auto left-0 md:mb-10 max-w-3xl h-[538px] md:h-auto md:w-full"
+                  src={couch2}
+                  alt=""
+                /> */}
               </div>
             </div>
           )}

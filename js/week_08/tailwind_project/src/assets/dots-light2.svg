@@ -1,0 +1,67 @@
+<svg width="172" height="217" viewBox="0 0 180 217" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.15">
+    <!-- Row 1 -->
+    <circle cx="3.5" cy="3.5" r="3.5" fill="white"/>
+    <circle cx="34.5" cy="3.5" r="3.5" fill="white"/>
+    <circle cx="65.5" cy="3.5" r="3.5" fill="white"/>
+    <circle cx="96.5" cy="3.5" r="3.5" fill="white"/>
+    <circle cx="127.5" cy="3.5" r="3.5" fill="white"/>
+    <circle cx="158.5" cy="3.5" r="3.5" fill="white"/>
+
+    <!-- Row 2 -->
+    <circle cx="3.5" cy="33.5" r="3.5" fill="white"/>
+    <circle cx="34.5" cy="33.5" r="3.5" fill="white"/>
+    <circle cx="65.5" cy="33.5" r="3.5" fill="white"/>
+    <circle cx="96.5" cy="33.5" r="3.5" fill="white"/>
+    <circle cx="127.5" cy="33.5" r="3.5" fill="white"/>
+    <circle cx="158.5" cy="33.5" r="3.5" fill="white"/>
+
+    <!-- Row 3 -->
+    <circle cx="3.5" cy="63.5" r="3.5" fill="white"/>
+    <circle cx="34.5" cy="63.5" r="3.5" fill="white"/>
+    <circle cx="65.5" cy="63.5" r="3.5" fill="white"/>
+    <circle cx="96.5" cy="63.5" r="3.5" fill="white"/>
+    <circle cx="127.5" cy="63.5" r="3.5" fill="white"/>
+    <circle cx="158.5" cy="63.5" r="3.5" fill="white"/>
+
+    <!-- Row 4 -->
+    <circle cx="3.5" cy="93.5" r="3.5" fill="white"/>
+    <circle cx="34.5" cy="93.5" r="3.5" fill="white"/>
+    <circle cx="65.5" cy="93.5" r="3.5" fill="white"/>
+    <circle cx="96.5" cy="93.5" r="3.5" fill="white"/>
+    <circle cx="127.5" cy="93.5" r="3.5" fill="white"/>
+    <circle cx="158.5" cy="93.5" r="3.5" fill="white"/>
+
+    <!-- Row 5 -->
+    <circle cx="3.5" cy="123.5" r="3.5" fill="white"/>
+    <circle cx="34.5" cy="123.5" r="3.5" fill="white"/>
+    <circle cx="65.5" cy="123.5" r="3.5" fill="white"/>
+    <circle cx="96.5" cy="123.5" r="3.5" fill="white"/>
+    <circle cx="127.5" cy="123.5" r="3.5" fill="white"/>
+    <circle cx="158.5" cy="123.5" r="3.5" fill="white"/>
+
+    <!-- Row 6 -->
+    <circle cx="3.5" cy="153.5" r="3.5" fill="white"/>
+    <circle cx="34.5" cy="153.5" r="3.5" fill="white"/>
+    <circle cx="65.5" cy="153.5" r="3.5" fill="white"/>
+    <circle cx="96.5" cy="153.5" r="3.5" fill="white"/>
+    <circle cx="127.5" cy="153.5" r="3.5" fill="white"/>
+    <circle cx="158.5" cy="153.5" r="3.5" fill="white"/>
+
+    <!-- Row 7 -->
+    <circle cx="3.5" cy="183.5" r="3.5" fill="white"/>
+    <circle cx="34.5" cy="183.5" r="3.5" fill="white"/>
+    <circle cx="65.5" cy="183.5" r="3.5" fill="white"/>
+    <circle cx="96.5" cy="183.5" r="3.5" fill="white"/>
+    <circle cx="127.5" cy="183.5" r="3.5" fill="white"/>
+    <circle cx="158.5" cy="183.5" r="3.5" fill="white"/>
+
+    <!-- Row 8 -->
+    <circle cx="3.5" cy="213.5" r="3.5" fill="white"/>
+    <circle cx="34.5" cy="213.5" r="3.5" fill="white"/>
+    <circle cx="65.5" cy="213.5" r="3.5" fill="white"/>
+    <circle cx="96.5" cy="213.5" r="3.5" fill="white"/>
+    <circle cx="127.5" cy="213.5" r="3.5" fill="white"/>
+    <circle cx="158.5" cy="213.5" r="3.5" fill="white"/>
+  </g>
+</svg>
