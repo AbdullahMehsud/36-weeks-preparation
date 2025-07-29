@@ -1,19 +1,28 @@
 "use strict";
-class instagram {
-    constructor(cameraMode, filter, burst) {
-        this.cameraMode = cameraMode;
-        this.filter = filter;
-        this.burst = burst;
-    }
-}
-class youtube {
-    constructor(cameraMode, filter, burst, shorts) {
-        this.cameraMode = cameraMode;
-        this.filter = filter;
-        this.burst = burst;
-        this.shorts = shorts;
-    }
-    createStory() {
-        console.log("story");
-    }
-}
+// interface takePhoto {
+//     cameraMode: string,
+//     filter: string,
+//     burst: number
+// }
+// interface story {
+//     createStory(): string
+// }
+// class instagram implements takePhoto {
+//     constructor(
+//         public cameraMode: string,
+//         public filter: string,
+//         public burst: number
+//     ){
+//     }
+// }
+// class youtube implements takePhoto {
+//     constructor(
+//         public cameraMode: string,
+//         public filter: string,
+//         public burst: number,
+//         public shorts: string
+//     ){}
+//     createStory(): void{
+//         console.log("story");
+//     }
+// }
